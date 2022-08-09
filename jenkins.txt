@@ -36,3 +36,80 @@ curl --location --request POST 'http://124.223.163.103:8091/computer/doCreateIte
 curl --location --request GET 'http://124.223.163.103:8091/crumbIssuer/api/json?pretty=true' \
 --header 'Authorization: Basic cm9vdDo2NTQzMjE='
 
+
+
+
+
+
+
+
+
+
+
+
+curl --location --request POST 'http://localhost:8091/computer/doCreateItem' \
+--header 'Connection: keep-alive' \
+--header 'Cache-Control: max-age=0' \
+--header 'Origin: http://localhost:8091' \
+--header 'Upgrade-Insecure-Requests: 1' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0' \
+--header 'Sec-Fetch-Dest: document' \
+--header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+--header 'Sec-Fetch-Site: same-origin' \
+--header 'Sec-Fetch-Mode: navigate' \
+--header 'Sec-Fetch-User: ?1' \
+--header 'Referer: http://localhost:8091/computer/createItem' \
+--header 'Accept-Language: zh-CN,zh;q=0.9' \
+--header 'Cookie: jenkins-timestamper-offset=-28800000; jenkins-timestamper=system; jenkins-timestamper-local=true; screenResolution=1280x1024; vipPromorunningtmr=; isvipretainend=; discount_free_trigger=; JSESSIONID.8ff62224=node0bhkicz600q9v19tv3w5xtqg3j7.node0; JSESSIONID.7e16b9cb=node01etazgntod8mjguyskx44lgki1.node0; remember-me=cm9vdDoxNjYxMTgzOTQ1MjYwOmY0MWI2ODNmYzgzZWQ5YWZlYzNiZDY2MTU2MDY1ZTcwYzMzNDIwYzdiNmNlOGI5M2U2MTRhY2ZkYjcwNDE5OGI' \
+--data-urlencode 'name=ag' \
+--data-urlencode '_.nodeDescription=' \
+--data-urlencode '_.numExecutors=1' \
+--data-urlencode '_.remoteFS=/opt/build' \
+--data-urlencode '_.labelString=' \
+--data-urlencode 'mode=NORMAL' \
+--data-urlencode 'stapler-class=hudson.slaves.JNLPLauncher' \
+--data-urlencode '$class=hudson.slaves.JNLPLauncher' \
+--data-urlencode '_.workDirPath=' \
+--data-urlencode '_.internalDir=remoting' \
+--data-urlencode '_.tunnel=' \
+--data-urlencode 'stapler-class=hudson.slaves.CommandLauncher' \
+--data-urlencode '$class=hudson.slaves.CommandLauncher' \
+--data-urlencode 'oldCommand=' \
+--data-urlencode '_.command=' \
+--data-urlencode 'stapler-class=hudson.plugins.sshslaves.SSHLauncher' \
+--data-urlencode '$class=hudson.plugins.sshslaves.SSHLauncher' \
+--data-urlencode '_.host=' \
+--data-urlencode 'includeUser=false' \
+--data-urlencode '_.credentialsId=' \
+--data-urlencode 'stapler-class=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy' \
+--data-urlencode '$class=hudson.plugins.sshslaves.verifiers.KnownHostsFileKeyVerificationStrategy' \
+--data-urlencode 'stapler-class=hudson.plugins.sshslaves.verifiers.ManuallyProvidedKeyVerificationStrategy' \
+--data-urlencode '$class=hudson.plugins.sshslaves.verifiers.ManuallyProvidedKeyVerificationStrategy' \
+--data-urlencode 'stapler-class=hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy' \
+--data-urlencode '$class=hudson.plugins.sshslaves.verifiers.ManuallyTrustedKeyVerificationStrategy' \
+--data-urlencode 'stapler-class=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy' \
+--data-urlencode '$class=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy' \
+--data-urlencode '_.port=22' \
+--data-urlencode '_.javaPath=' \
+--data-urlencode '_.jvmOptions=' \
+--data-urlencode '_.prefixStartSlaveCmd=' \
+--data-urlencode '_.suffixStartSlaveCmd=' \
+--data-urlencode 'launchTimeoutSeconds=' \
+--data-urlencode 'maxNumRetries=' \
+--data-urlencode 'retryWaitTime=' \
+--data-urlencode 'tcpNoDelay=on' \
+--data-urlencode 'workDir=' \
+--data-urlencode 'stapler-class=hudson.slaves.RetentionStrategy$Always' \
+--data-urlencode '$class=hudson.slaves.RetentionStrategy$Always' \
+--data-urlencode 'stapler-class=hudson.slaves.SimpleScheduledRetentionStrategy' \
+--data-urlencode '$class=hudson.slaves.SimpleScheduledRetentionStrategy' \
+--data-urlencode 'stapler-class=hudson.slaves.RetentionStrategy$Demand' \
+--data-urlencode '$class=hudson.slaves.RetentionStrategy$Demand' \
+--data-urlencode 'stapler-class-bag=true' \
+--data-urlencode 'type=hudson.slaves.DumbSlave' \
+--data-urlencode 'Jenkins-Crumb=f5fdcc4161c7104a8dd28385843413c8dcbbb9e7c54e6b4df24627df70ed2813' \
+--data-urlencode 'json={"name":+"ag",+"nodeDescription":+"",+"numExecutors":+"1",+"remoteFS":+"/opt/build",+"labelString":+"",+"mode":+"NORMAL",+"":+["hudson.slaves.JNLPLauncher",+"0"],+"launcher":+{"stapler-class":+"hudson.slaves.JNLPLauncher",+"$class":+"hudson.slaves.JNLPLauncher",+"workDirSettings":+{"disabled":+false,+"workDirPath":+"",+"internalDir":+"remoting",+"failIfWorkDirIsMissing":+false},+"webSocket":+false,+"tunnel":+"",+"oldCommand":+""},+"retentionStrategy":+{"stapler-class":+"hudson.slaves.RetentionStrategy$Always",+"$class":+"hudson.slaves.RetentionStrategy$Always"},+"nodeProperties":+{"stapler-class-bag":+"true"},+"type":+"hudson.slaves.DumbSlave",+"Jenkins-Crumb":+"f5fdcc4161c7104a8dd28385843413c8dcbbb9e7c54e6b4df24627df70ed2813"}' \
+--data-urlencode 'Submit=保存'
+
+
