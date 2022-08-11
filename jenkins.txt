@@ -1,3 +1,26 @@
+https://docs.huihoo.com/jenkins/enterprise/14/user-guide-docs/foldersplus-sect-controlledslaves.html#folders-enable-approved-folders-enable-approved-f
+
+https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-masters/creating-node-with-the-rest-api/json
+
+
+
+https://docs.cloudbees.com/docs/cloudbees-ci/latest/cloud-secure-guide/folders-plus
+
+
+
+https://ghproxy.com/https://raw.githubusercontent.com/juju-l/MinGW-w64/master/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z
+
+
+https://docs.huihoo.com/jenkins/enterprise/14/user-guide-docs/foldersplus-sect-controlledslaves.html#folders-enable-approved-folders-enable-approved-f
+
+
+
+https://github.com/tsingkofer-cb/groovy-jenkins-scripts-public/blob/main/setup-controlled-agent-from-file.sh
+
+
+
+
+
 
 echo 6b4eb32cb198ac4344fd436588a51ddcb2666926689a6b26962ab06c17b2411e > secret-file
 curl -sO http://124.223.163.103:8091/jnlpJars/agent.jar
